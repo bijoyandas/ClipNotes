@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_note_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.tensbit.android.clipnotes.view.NoteDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar_layout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolTop"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/noteImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:scaleType="center"
+                tools:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/noteImage"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/white"
+                    android:hint="@string/title"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/content_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="top|start"
+                    android:hint="@string/write_something"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/doneNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/ic_done_white" />
+
+</RelativeLayout>

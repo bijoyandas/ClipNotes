@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ClipNotes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="no_notes_to_display">No notes to display</string>
+    <string name="write_something">Write something…</string>
+    <string name="title">Title</string>
+    <string name="notesName">Notes</string>
+    <string name="transition_note">transitionNote</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Search notes...</string>
+    <string name="notes">Notes</string>
+    <string name="archive">Archive</string>
+    <string name="trash">Trash</string>
+    <string name="share">Share</string>
+    <string name="communicate">Communicate</string>
+    <string name="email">Email</string>
+    <string name="no_notes_main">You haven\'t added any notes</string>
+    <string name="no_notes_archive">No notes in the archive</string>
+    <string name="no_notes_trash">Nothing in trash</string>
+    <string name="list_view">List View</string>
+    <string name="grid_view">Grid View</string>
+    <string name="app_details">ClipNotes - The minimalistic note taking app, available on Google play</string>
+    <string name="attach">Attach</string>
+    <string name="clip_it">Clip It</string>
+    <string name="unarchive">Unarchive</string>
+    <string name="moved_to_notes">Move to Notes</string>
+    <string name="delete_permanently">Delete Permanently</string>
+    <string name="security">Security</string>
+    <string name="theme">Theme</string>
+    <string name="multicolor">Multicolor</string>
+    <string name="minimalistic">Minimalistic</string>
+    <string name="rainbow">Rainbow effect</string>
+</resources>

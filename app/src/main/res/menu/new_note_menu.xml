@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/clip_note_menu"
+        android:orderInCategory="100"
+        android:title="@string/clip_it"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/archive_note_menu"
+        android:orderInCategory="200"
+        android:title="@string/archive"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/attachImage"
+        android:icon="@drawable/ic_camera_enhance"
+        android:title="@string/attach"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/shareNote"
+        android:title="@string/share"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_share_white"/>
+</menu>
